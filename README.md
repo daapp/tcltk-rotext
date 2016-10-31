@@ -1,11 +1,11 @@
-* DESCRIPTION
+# tcltk-rotext
 
-  This is readonly text widget for Tcl/Tk.
+This is readonly text widget for Tcl/Tk.
 
-* REQUIREMENTS
+# REQUIREMENTS
 
-  - snit (from tcllib) :: heavyweight, but useful for later extension
+- snit (from tcllib) :: heavyweight, but useful for later extension
 
-* EXAMPLE
+# EXAMPLE
 
-  At the end of module.
+At the end of module.
