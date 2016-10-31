@@ -2,10 +2,10 @@
 
 This is readonly text widget for Tcl/Tk.
 
-# REQUIREMENTS
+## REQUIREMENTS
 
 - snit (from tcllib) :: heavyweight, but useful for later extension
 
-# EXAMPLE
+## EXAMPLE
 
 At the end of module.
