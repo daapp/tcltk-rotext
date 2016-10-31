@@ -5,3 +5,7 @@
 * REQUIREMENTS
 
   - snit (from tcllib) :: heavyweight, but useful for later extension
+
+* EXAMPLE
+
+  At the end of module.

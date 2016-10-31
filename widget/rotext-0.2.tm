@@ -2,7 +2,7 @@ package require Tk
 package require snit
 package require widget::scrolledtext
 
-# 2011 (c) Alexander Danilov  <alexander.a.danilov@gmail.com>
+# 2011-2016 (c) Alexander Danilov  <alexander.a.danilov@gmail.com>
 # Example at the end of file
 
 snit::widgetadaptor widget::rotext {
@@ -32,14 +32,14 @@ snit::widgetadaptor widget::rotext {
 
 
 if {[info exists argv0] && [file tail [info script]] eq [file tail $argv0]} {
-    entry .e1
-    entry .e2
-    widget::rotext .t -bg lightblue
-    entry .e3
-    pack .e1 .e2 .t .e3
+    widget::rotext .rotext -bg lightblue
+    text .text
+    pack .rotext .text -side top -fill both -expand true
 
     bind . <Escape> exit
 
-    .t insert end "Try to\n input something\n here, cut\n or paste text."
-    .t delete 1.0 2.0
+    .rotext insert end "HELLO!\nThis is rotext widget\nTry to\n input something\n here, cut\n or paste text." ; # command "insert" works as expected
+    .rotext delete 1.0 2.0; # command "delete" works as expected
+
+    .text insert end  "This is normal text widget"
 }
